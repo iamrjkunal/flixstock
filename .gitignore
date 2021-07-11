@@ -1,2 +1,8 @@
 .DS_Store
 **/__pycache__/
+
+pretrained_weights/*
+!pretrained_weights/.gitkeep
+
+ckpt/*
+!ckpt/.gitkeep
