@@ -147,5 +147,5 @@ if __name__ == "__main__":
     tf.compat.v1.app.flags.DEFINE_integer("batch_size", 64, "Batch Size")
     tf.compat.v1.app.flags.DEFINE_float("lr", 0.0001, "Learning Rate")
     tf.compat.v1.app.flags.DEFINE_float("stop_loss", 0.6, "Minimum Overall Accuracy")
-    tf.compat.v1.app.flags.DEFINE_boolean("restore_model", False, "Model Restore")
+    tf.compat.v1.app.flags.DEFINE_boolean("restore_model", True, "Model Restore")
     tf.compat.v1.app.run()
