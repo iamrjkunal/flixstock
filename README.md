@@ -4,7 +4,6 @@
 <!-- MarkdownTOC depth=4 -->
 - [Prerequisites](#prerequisites)
 - [Usage Guide](#usage-guide)
-- [Workflow Explanation](#workflow-explanation)
 - [To Do Left](#to-do-left)
  
 ## Prerequisites
@@ -61,6 +60,6 @@ python train.py --test_data_dir custom_data/test_images/ \
                 --ckpt_dir ckpt/
 ```
   
-## Workflow Explanation
-
 ## To Do Left
+1. Adding proper callbacks to make training process efficient.
+2. Since it is a single neural net for all the 3 independent classes so model will take a lot time to converge although implemented loss function works good but takes time. Some more advanced loss function can be used.
