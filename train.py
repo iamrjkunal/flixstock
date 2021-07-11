@@ -25,7 +25,7 @@ def class_weight_cal(df):
 
 
 
-input_shape = (64,64)
+input_shape = (256,256)
 num_classes = 3
 n_channels = 3
 
@@ -143,8 +143,8 @@ if __name__ == "__main__":
     tf.compat.v1.app.flags.DEFINE_string("imagenet_weights", "pretrained_weights/xception_weights_tf_dim_ordering_tf_kernels_notop.h5", "imagenet weights")
     tf.compat.v1.app.flags.DEFINE_float("test_split", 0.1, "test split ratio")
     tf.compat.v1.app.flags.DEFINE_integer("random_state", 30, "data spliting random state")
-    tf.compat.v1.app.flags.DEFINE_integer("num_epochs", 1000, "number of epochs")
-    tf.compat.v1.app.flags.DEFINE_integer("batch_size", 16, "Batch Size")
+    tf.compat.v1.app.flags.DEFINE_integer("num_epochs", 3000, "number of epochs")
+    tf.compat.v1.app.flags.DEFINE_integer("batch_size", 64, "Batch Size")
     tf.compat.v1.app.flags.DEFINE_float("lr", 0.0001, "Learning Rate")
     tf.compat.v1.app.flags.DEFINE_float("stop_loss", 0.6, "Minimum Overall Accuracy")
     tf.compat.v1.app.flags.DEFINE_boolean("restore_model", False, "Model Restore")
